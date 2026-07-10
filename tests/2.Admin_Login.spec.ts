@@ -27,8 +27,8 @@ test("Admin Login", async ({ page, context }) => {
 
     
     await loginPage.login({
-        emailOrPhone: process.env.ADMIN_EMAIL ?? "",
-        password: process.env.ADMIN_PASSWORD ?? "",
+        emailOrPhone: 'admin@dmoney.com',
+        password: '1234' ,
     });
 
     

@@ -10,7 +10,7 @@ test.use({
     storageState: 'auth.json'
 });
 
-const CUSTOMER_PHONE = process.env.CUSTOMER_PHONE ?? '01714167655';
+const CUSTOMER_PHONE = '01714167655';
 
 test("Agent Deposit", async ({ page }) => {
 

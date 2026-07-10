@@ -23,7 +23,7 @@ dotenv.config();
     await signupPage.signup({
       fullname: `${faker.person.fullName()}`,
       email: agentEmail,
-      password: process.env.AGENT_PASSWORD ?? '',
+      password: '1234' ,
       phoneNumber: agentPhone,
       nid: randomNid(),
       role: 'Agent',

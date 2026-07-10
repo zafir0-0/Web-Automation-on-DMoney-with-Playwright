@@ -28,8 +28,8 @@ test("System Login", async ({ page, context }) => {
 
     // Perform login
     await loginPage.login({
-        emailOrPhone: process.env.SYSTEM_EMAIL ?? "",
-        password: process.env.SYSTEM_PASSWORD ?? "",
+        emailOrPhone:  "system@dmoney.com",
+        password: '1234' ,
     });
 
     // Verify successful login

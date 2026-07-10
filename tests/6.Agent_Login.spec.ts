@@ -24,7 +24,7 @@ test("Agent login", async ({ page, request, context }) => {
     await loginPage.navigate();
     await loginPage.login({
         emailOrPhone: agentData.agentEmail,
-        password: process.env.AGENT_PASSWORD ?? "",
+        password: '1234' ,
     });
     await page.waitForTimeout(5000);
 
