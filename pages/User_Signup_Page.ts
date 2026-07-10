@@ -34,8 +34,6 @@ export class SignupPage {
 
     async navigateFromHomePage() {
         await this.page.goto('/');
-        await this.page.keyboard.press('Tab');
-        await this.page.keyboard.press('Enter');
         const signUpLink = this.page.getByRole('link', { name: 'Sign Up' }).first();
         // Wait until the link is visible
         await expect(signUpLink).toBeVisible({ timeout: 30000 });
