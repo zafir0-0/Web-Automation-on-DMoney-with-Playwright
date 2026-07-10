@@ -34,10 +34,10 @@ export default defineConfig({
     storageState: existsSync('auth.json') ? 'auth.json' : undefined,
     headless: true,
         // Capture screenshot only when test fails
-    screenshot: 'only-on-failure',
+    screenshot: 'on',
 
     // Record video only when test retries for the first time
-    video: 'on-first-retry',
+    video: 'on',
   },
 
   /* Configure projects for major browsers */
